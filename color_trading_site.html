@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Trading Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        h1 {
+            margin-top: 50px;
+            color: #333;
+        }
+        .color-box {
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            margin: 20px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .color-info {
+            margin-top: 20px;
+        }
+        .btn {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1>Color Trading Platform</h1>
+    <div>
+        <div class="color-box" style="background-color: #FF5733;" onclick="tradeColor('#FF5733')"></div>
+        <div class="color-box" style="background-color: #33FF57;" onclick="tradeColor('#33FF57')"></div>
+        <div class="color-box" style="background-color: #3357FF;" onclick="tradeColor('#3357FF')"></div>
+    </div>
+    
+    <div class="color-info">
+        <p>Select a color to trade it. The color you select will be "traded".</p>
+    </div>
+    
+    <button class="btn" onclick="startTrading()">Start Trading</button>
+
+    <script>
+        function tradeColor(color) {
+            alert("You have selected color: " + color + " for trading.");
+        }
+
+        function startTrading() {
+            alert("Trading has started! Select colors to trade.");
+        }
+    </script>
+</body>
+</html>
